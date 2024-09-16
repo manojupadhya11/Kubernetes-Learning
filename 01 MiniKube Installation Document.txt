@@ -1,0 +1,23 @@
+    1  cd /
+    2  yum install docker -y
+    3  systemctl start docker
+    4   curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-latest.x86_64.rpm
+    5  ls
+    6  sudo rpm -Uvh minikube-latest.x86_64.rpm
+    7  minikube --help
+    8  kubectl get pods
+    9  minikube start
+   10  minikube start --force
+   11  docker ps
+   12  docker exec -it minikube bash
+   13  clear
+   14  docker ps 
+   15  history
+   16   curl -O https://s3.us-west-2.amazonaws.com/amazon-eks/1.30.0/2024-05-12/bin/linux/amd64/kubectl
+   17  ls
+   18  chmod +x kubectl 
+   19  ls
+   20  ./kubectl get pods
+   21  ./kubectl --help
+   22  clear
+   23  history
