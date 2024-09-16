@@ -1,0 +1,120 @@
+    1  cd /
+    2  yum install docker -y
+    3  systemctl start docker
+    4   curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-latest.x86_64.rpm
+    5  ls
+    6  sudo rpm -Uvh minikube-latest.x86_64.rpm
+    7  minikube --help
+    8  kubectl get pods
+    9  minikube start
+   10  minikube start --force
+   11  docker ps
+   12  docker exec -it minikube bash
+   13  clear
+   14  docker ps 
+   15  history
+   16   curl -O https://s3.us-west-2.amazonaws.com/amazon-eks/1.30.0/2024-05-12/bin/linux/amd64/kubectl
+   17  ls
+   18  chmod +x kubectl 
+   19  ls
+   20  ./kubectl get pods
+   21  ./kubectl --help
+   22  clear
+   23  history
+   24  ./kubectl run manu --image=nginx
+   25  ./kubectl get pods
+   26  ./kubectl describe pod manu
+   27  ./kubectl logs manu
+   28  docker attach minikube
+   29  docker ps
+   30  docker exec -it minikube bash
+   31  ls
+   32  clear
+   33  ./kubectl get pods
+   34  date 
+   35  which date
+   36  cp kubectl /usr/bin/
+   37  kubectl get pods
+   38  kubectl get svc
+   39  kubectl delete pod manu
+   40  kubectl get pods
+   41  kubectl create deployment manudeploy --image = nginx
+   42  kubectl create deployment manudeploy --image=nginx
+   43  kubectl get deployment
+   44  kubectl get pods
+   45  kubectl delete pod manudeploy-7dd4bbc779-f2ctq
+   46  kubectl get pods
+   47  kubectl delete pod manudeploy-7dd4bbc779-1rf5c
+   48  kubectl delete pod manudeploy-7dd4bbc779-lrf5c
+   49  kubectl get deployment
+   50  kubectl get pods
+   51  kubectl exec  -it manudeploy-7dd4bbc779-p2q4r --bash
+   52  kubectl exec  -it manudeploy-7dd4bbc779-p2q4r -- bash
+   53  kubectl get pods
+   54  kubectl delete pod manudeploy-7dd4bbc779-p2q4r 
+   55  kubectl get pods
+   56  kubectl exec  -it manudeploy-7dd4bbc779-bc9cw -- bash
+   57  kubectl describe deployment manudeploy
+   58  cd /
+   59  history
+   60  kubectl get deployment
+   61  kubectl get pods
+   62  kubectl scale deployment manudeploy --replicas=5
+   63  kubectl get pods
+   64  kubectl get pods
+   65  kubectl get pods
+   66  kubectl get pods
+   67  kubectl get deployment
+   68  kubectl scale deployment manudeploy --replicas=10
+   69  kubectl get pods
+   70  kubectl get pods
+   71  kubectl get deployment
+   72  kubectl get pods
+   73  kubectl get deployment
+   74  kubectl exec -it manudeploy-7dd4bbc779-t67z -- hostname -I
+   75  kubectl get pods
+   76  kubectl exec -it manudeploy-7dd4bbc779-t67z2 -- hostname -I
+   77  kubectl scale deployment manudeploy --replicas=1
+   78  kubectl get pods
+   79  kubectl get deployment
+   80  kubectl get pods
+   81  kubectl exec -it manudeploy-7dd4bbc779-bc9cw -- hostname -I
+   82  curl 10.244.0.7
+   83  kubectl expose deployment manudeploy --port 80 --type=NodePort
+   84  kubectl get svc
+   85  minikube ip
+   86  curl 192.168.49.2:31761
+   87  clear
+   88  curl 192.168.49.2:31761
+   89  kubectl scale deployment manudeploy --replicas=10
+   90  curl 192.168.49.2:31761
+   91  curl 192.168.49.2:31761
+   92  curl 192.168.49.2:31761
+   93  kubectl get pods
+   94  curl 192.168.49.2:31761
+   95  curl 192.168.49.2:31761
+   96  kubectl get pods
+   97  curl 192.168.49.2:31761
+   98  curl 192.168.49.2:31761
+   99  curl 192.168.49.2:31761
+  100  curl 192.168.49.2:31761
+  101  kubectl get service
+  102  kubectl scale deployment manudeploy --replicas=0
+  103  curl 192.168.49.2:31761
+  104  curl 192.168.49.2:31761
+  105  kubectl get pods
+  106  kubectl scale deployment manudeploy --replicas=1
+  107  kubectl get pods
+  108  kubectl get pods
+  109  curl 192.168.49.2:31761
+  110  kubectl get pods
+  111  clear
+  112  nano pod.yml
+  113  vi pod.yml 
+  114  vi pod.yml 
+  115  kubectl apply -f pod.yml 
+  116  vi pod.yml 
+  117  kubectl apply -f pod.yml 
+  118  kubectl get pods
+  119  kubectl get pods
+  120  history
