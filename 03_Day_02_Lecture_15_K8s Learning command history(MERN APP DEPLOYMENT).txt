@@ -1,0 +1,179 @@
+    1  clear
+    2  ls
+    3  curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-latest.x86_64.rpm
+    4  rpm -Uvh minikube-latest.x86_64.rpm
+    5  minikube start --force
+    6  curl -O https://s3.us-west-2.amazonaws.com/amazon-eks/1.28.3/2023-11-14/bin/linux/amd64/kubectl
+    7  minikube start --force
+    8  kubectl get nodes
+    9  cd /
+   10  kubect; get pods
+   11  kubectl get pods
+   12  yum install docker -y
+   13  kubectl get pods
+   14  ls -l /usr/bin/kubectl
+   15  sudo chmod +x /usr/bin/kubectl
+   16  kubectl get pods
+   17  minikube start --force
+   18  kubectl get pods
+   19  minikube status
+   20  ls
+   21  cd ec2-user
+   22  history
+   23  cp ./kubectl /usr/bin/
+   24  kubectl get pods
+   25  sudo su
+   26  minikube status
+   27  minikube start
+   28  systemctl start docker
+   29  minikube start
+   30  minikube status
+   31  minikube start --force
+   32  docker ps
+   33  kubectl get pods
+   34  kubectl get svc
+   35  kubectl get nodes
+   36  ls
+   37  history
+   38  minikube status
+   39  docker status
+   40  systemctl docker status
+   41  systemctl status docker
+   42  lear
+   43  clear
+   44  mkdir K8s-MERN-Project
+   45  cd K8s-MERN-Project/
+   46  vi mongo.yml
+   47  vi secrets.yml
+   48  ls
+   49  kubectl get secret
+   50  kubectl apply -f secrets.yml 
+   51  vi secrets.yml
+   52  vi secrets.yml
+   53  mv secrets.yml secret.yml
+   54  ls
+   55  kubectl apply -f secret.yml 
+   56  echo -n 'mypassword' | base64
+   57  echo -n 'admin' | base64
+   58  echo -n 'redhat' | base64
+   59  vi secret.yml
+   60  vi secret.yml
+   61  kubectl apply -f secret.yml 
+   62  kubectl get secret
+   63  kubectl describe secret mongo-secret
+   64  mv mongo.yml mongo-app.yml
+   65  ls
+   66  vi mongo-app.yml 
+   67  cart secret.yml 
+   68  cat secret.yml 
+   69  vi mongo-app.yml 
+   70  vi mongo-app.yml 
+   71  clear
+   72  kubectl apply -f mongo-app.yml
+   73  vi mongo-app.yml 
+   74  vi mongo-app.yml 
+   75  kubectl apply -f mongo-app.yml
+   76  vi mongo-app.yml 
+   77  kubectl apply -f mongo-app.yml
+   78  vi mongo-app.yml 
+   79  kubectl apply -f mongo-app.yml
+   80  vi mongo-app.yml 
+   81  kubectl apply -f mongo-app.yml
+   82  vi mongo-app.yml 
+   83  cat secret.yml 
+   84  kubectl apply -f mongo-app.yml
+   85  vi mongo-app.yml 
+   86  kubectl apply -f mongo-app.yml
+   87  kubectl get deployment
+   88  kubectl get pods
+   89  cd K8s-MERN-Project/
+   90  ls
+   91  vi mongo-app.yml 
+   92  vi mongo-app.yml 
+   93  kubectl get replicaset
+   94   kubectl get deployment
+   95   kubectl describe deployment mongo-deployment.yml
+   96   kubectl describe deployment mongo-deployment
+   97  vi mongo-express-webapp.yml
+   98  vi mongo-express-webapp.yml
+   99   vi mongo-service.yml
+  100  kubectl get svc
+  101  kubectl apply -f mongo-service.yml
+  102  kubectl get svc
+  103  kubectl describe svc mongo-service.yml 
+  104  kubectl describe svc mongo-service
+  105  vi mongo-express-webapp.yml 
+  106  vi mongo-express-webapp.yml 
+  107  vi mongo-config.yml
+  108  kubectl get configmap
+  109  kubectl apply -f mongo-config.yml 
+  110  kubectl get configmap
+  111  kubectl describe mongo-config
+  112  kubectl describe configmap mongo-config
+  113  ls
+  114  vi mongo-express-webapp.yml 
+  115  kubectl describe configmap mongo-config
+  116  cat mongo-service.yml 
+  117  cat mongo-config.yml 
+  118  vi mongo-express-webapp.yml 
+  119  kubectl get pods
+  120  kubectl get deployments
+  121  kubectl get replicaset
+  122  kubectl apply -f mongo-express-webapp.yml A
+  123  vi mongo-express-webapp.yml 
+  124  kubectl apply -f mongo-express-webapp.yml 
+  125  vi mongo-express-webapp.yml 
+  126  kubectl apply -f mongo-express-webapp.yml 
+  127  kubectl get deployment
+  128  kubectl get replicaset
+  129  kubectl get pods
+  130  vi mongo-express-webapp.yml 
+  131  vi mongo-express-webapp.yml 
+  132  ls
+  133  kubectl get logs webapp-deployment-675d89c96d-pm6b9
+  134  kubectl logs webapp-deployment-675d89c96d-pm6b9
+  135  cat mongo-service.yml 
+  136  cat mongo-config.yml 
+  137  kubectl logs webapp-deployment-675d89c96d-pm6b9
+  138  ls
+  139  cd K8s-MERN-Project/
+  140  ls
+  141  cat mongo-app.yml 
+  142  ls
+  143  history
+  144  cat mongo-express-webapp.yml 
+  145  vi webapp-service,yml
+  146  ls
+  147  rm webapp-service,yml 
+  148  vi webapp-service.yml
+  149  kubectl apply -f webapp-service.yml 
+  150  vi webapp-service.yml
+  151  kubectl apply -f webapp-service.yml 
+  152  kubectl get svc
+  153  docker ps
+  154  minikube ip
+  155  curl 192.168.49.2:32702
+  156  kubectl get pods
+  157   kubectl logs webapp-deployment-675d89c96d-pm6b9
+  158  kubectl get svc
+  159  yum install socat
+  160  kubectl get pods
+  161  socat TCP-LISTEN:8081,fork,su=nobody TCP4:192.168.49.2:32702 &
+  162  kubectl get svc
+  163  ls
+  164  cd K8s-MERN-Project/
+  165  ls
+  166  mv mongo-app.yml mongo-db-app.yml
+  167  ls
+  168  vi mongo-db-app.yml 
+  169  vi mongo-express-webapp.yml 
+  170  ls
+  171  vi secret.yml 
+  172  ls
+  173  vi mongo-service.yml 
+  174  ls
+  175  vi webapp-service.yml 
+  176  cd K8s-MERN-Project/
+  177  ls
+  178  vi mongo-config.yml 
+  179  history
