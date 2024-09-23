@@ -219,7 +219,13 @@ Updated the mongo-db-app.yml file
 
 
 ##################### K8S Dashboard Practical ##############################
-
+    1  kubectl get all
+    2  kubectl get all -n manudevops
+    3  kubectl get ns
+    4  minikube --help
+    5  minikube dashboard --help
+    6  minikube dashboard 
+    7  history
  	minikube dashboard
  	kubectl get pods -n kubernetes-dasboard
    72  kubectl get pods -n kubernetes-dashboard
