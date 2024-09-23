@@ -1,0 +1,129 @@
+
+    1  ls
+    2  yum install git -y &
+    3  git clone https://github.com/manojupadhya11/Kubernetes-Learning.git
+    4  ls
+    5  cd Kubernetes-Learning/
+    6  ls
+    7  cd MERN_APP_Deployment\ in\ K8s/
+    8  ls
+    9  History
+   10  history
+   11  clear
+   12  yum install docker -y
+   13  systemctl start dpcker 
+   14  systemctl start docker 
+   15  systemctl status docker 
+   16  curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-latest.x86_64.rpm
+   17  rpm -Uvh minikube-latest.x86_64.rpm
+   18  minikube start
+   19  minikube start --force
+   20  curl -O https://s3.us-west-2.amazonaws.com/amazon-eks/1.28.3/2023-11-14/bin/linux/amd64/kubectl
+   21  chmod +x ./kubectl
+   22  cp ./kubectl /usr/bin/
+   23  kubectl get pods
+   24  kubectl apply -f secret.yml 
+   25  kubectl a
+   26  ls
+   27  kubectl apply -f mongo-db-app.yml 
+   28  kubectl get pods
+   29  kubectl get pods
+   30  kubectl get pods
+   31  kubectl get pods
+   32  kubectl get pods
+   33  kubectl get pods
+   34  kubectl get pods
+   35  kubectl apply -f mongo-service.yml 
+   36  kubectl get svc
+   37  kubectl apply -f mongo-config.yml 
+   38  kubectl get svc
+   39  kubectl get config
+   40  kubectl apply -f mongo-express-webapp.yml 
+   41  kubectl get pods
+   42  kubectl get pods
+   43  kubectl get pods
+   44  kubectl get pods
+   45  kubectl apply -f webapp-service.yml 
+   46  kubectl get svc
+   47  minikube ip
+   48  cur 192.168.49.2:32590
+   49  curl 192.168.49.2:32590
+   50  socat TCP-LISTEN:8081,fork,su=nobody TCP4:192.168.49.2:32590 &
+   51  yum install socat -y
+   52  socat TCP-LISTEN:8081,fork,su=nobody TCP4:192.168.49.2:32590 &
+   53  ls
+   54  cd Kubernetes-Learning/
+   55  ls
+   56  cd MERN_APP_Deployment\ in\ K8s/
+   57  kubectl get pods
+   58  kubectl get deployment
+   59  kubectl scale deployment mongo-deployment --replicas=5
+   60  kubectl get replicaset
+   61  kubectl get pods
+   62  kubectl scale deployment mongo-deployment --replicas=1
+   63  kubectl get replicaset
+   64  kubectl get pods
+   65  kubectl delete pod mongo-deployment-7b4b59766b-tr7vc 
+   66  kubectl get pods
+   67  ls
+   68  vi mongo-db-app.yml 
+   69  vi mongo-db-app.yml 
+   70  vi mongo-db-app.yml 
+   71  kubectl apply -f mongo-db-app.yml 
+   72  kubectl get pods
+   73  kubectl get pods
+   74  docker ps
+   75  docker exec -it minikube bash
+   76  kubectl get pods -o yaml
+   77  docker exec -it minikube bash
+   78  kubectl get pods
+   79  kubectl delete pod mongo-deployment
+   80  kubectl delete pod mongo-deployment-85c858ffd-df7x2
+   81  kubectl get pods
+
+
+
+------------------INSIDE MONGO_DB_APP POD----------------------
+    1  cd /var/lib/kubelet/pods/
+    2  cd 404443d7-7449-4781-b214-b2f6d917c02e
+    3  ls
+    4  cd containers/
+    5  ls
+    6  cd mongo-db/
+    7  ls
+    8  cd ..
+    9  cd volumes/
+   10  ls
+   11  cd kubernetes.io~
+   12  cd kubernetes.io~empty-dir/
+   13  ls
+   14  cd mongo-volume/
+   15  ls
+   16  lsz
+   17  ls
+   18  history
+
+--------------------K8s Cluster-------HostPath---------------------
+
+   83  vi mongo-db-app.yml 
+   84  kubectl apply -f mongo-db-app.yml 
+   85  vi mongo-db-app.yml 
+   86  kubectl apply -f mongo-db-app.yml 
+   87  kubectl get pods
+   88  docker exec -it minikube bash
+Updated the mongo-db-app.yml file
+
+-------------Inside minikube cluster--------------
+       cd data/
+   26  ls
+   27  exit
+
+----------------------K8s Cluster---------HostPath Deleting the pods and checking the volume ----------------
+   90  docker exec -it minikube bash
+   91  kubectl get pods
+   92  kubectl delete pod mongo-deployment-7857f4cd99-6czd4
+   93  kubectl get pods
+   94  docker exec -it minikube bash
+
+------------HostPath and emptyDir practical Completed----------------
+
