@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: flask-app
+  namespace: manudevops
+spec:
+  containers:
+  - name: flask
+    image: manuupadhya11/pythonflask
+    ports:
+    - containerPort: 80
+    resources:
+      limits:
+        memory: "800Mi"
+        cpu: "800m"
+      requests:
+        memory: "600Mi"
+        cpu: "400m"
