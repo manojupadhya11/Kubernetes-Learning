@@ -127,3 +127,49 @@ Updated the mongo-db-app.yml file
 
 ------------HostPath and emptyDir practical Completed----------------
 
+---------------Persistent Volume(PV) and PVC Practical--------------------
+    1  ls
+    2  vi pv.yml
+    3  kubectl apply -f pv.yml 
+    4  kubectl get pv
+    5  docker exec -it minikube bash
+    6  vi pv.yml
+    7  docker exec -it minikube bash
+    8  kubectl get pv
+    9  vi pvc.yml
+   10  kubectl apply -f pvc.yml 
+   11  kubectl get pvc
+   12  kubectl get pv
+   13  vi mongo-db-app.yml 
+   14  vi mongo-db-app.yml 
+   15  vi mongo-db-app.yml 
+   16  kubectl get pods
+   17  kubectl apply -f mongo-db-app.yml 
+   18  kubectl get pods
+   19  docker exex -it minikube bash
+   20  docker exec -it minikube bash
+   21  history
+
+------------Inside minikbe clster--------------------
+   38  mkdir -p storage/manu
+   39  ls
+   40  cd storage/
+   41  ls
+   42  cd manu/
+   43  ls
+   44  exit
+   45  ls
+   46  cd storage/
+   47  ls
+   48  cd manu/
+   49  ls
+   50  history
+
+
+
+###---------------Persistent Volume Practical Completed------------------###
+
+
+
+
+
