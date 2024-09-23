@@ -171,5 +171,52 @@ Updated the mongo-db-app.yml file
 
 
 
+###############-------Namespaces in K8s--------################
+   53  kubectl get namespaces
+   54  kubectl get pod
+   55  kubectl get pod -n default
+   56  kubectl get pod -n kube-system
+   57  kubectl get pod -n kube-public
+   58  kubectl get pod -n kube-node-lease
+   59  vi manu_ns.yml
+   60  ls
+   61  vi manu_ns.yml
+   62  kubectl apply -f manu_ns.yml 
+   63  kubectl get namespaces
+   64  kubectl get ns
+   65  cd ..
+   66  kubectl get ns
+   67  history
+   68  ls
+   69  vi pod.yml
+   70  ls
+   71  cd Kubernetes-Learning/
+   72  history
+   73  ls
+   74  vi pod_second.yml
+   75  vi pod_second.yml
+   76  kubectl get ns
+   77  vi pod_second.yml
+   78  kubectl apply -f pod_second.yml 
+   79  vi pod_second.yml
+   80  kubectl apply -f pod_second.yml 
+   81  kubectl get pods
+   82  kubectl get pods --ns manudevops 
+   83  kubectl get pods -n manudevops 
+   84  cat pod_second.yml 
+   85  vi pod_second.yml 
+   86  vi pod_second.yml 
+   87  kubectl apply -f pod_second.yml 
+   88  kubectl get pods
+   89  kubectl get pods -n manudevops
+   90  kubectl delete pod flask-app -n manudevops
+   91  kubectl apply -f pod_second.yml 
+   92  kubectl get pods -n manudevops
+   93  kubectl describe pod flask-app -n manudevops
+   94  history
+
+-----------Name Space command completed ------------------
+
+
 
 
