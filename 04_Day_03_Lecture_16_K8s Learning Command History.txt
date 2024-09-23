@@ -218,5 +218,88 @@ Updated the mongo-db-app.yml file
 -----------Name Space command completed ------------------
 
 
+##################### K8S Dashboard Practical ##############################
+
+ 	minikube dashboard
+ 	kubectl get pods -n kubernetes-dasboard
+   72  kubectl get pods -n kubernetes-dashboard
+   73  kubectl get deployments -n kubernetes-dashboard
+   74  kubectl edit deployment kubernetes-dashboard
+   75  kubectl edit deployment kubernetes-dashboard -n kubernetes-dashboard
+   76  kubectl get svc -n kubernetes-dashboard
+   77  kubectl edit svc kubernetes-dashboard -n kubernetes-dashboard
+   78  kubectl get svc -n kubernetes-dashboard
+   79  kubectl edit svc kubernetes-dashboard -n kubernetes-dashboard
+   80  kubectl get svc -n kubernetes-dashboard
+   81  cd /
+   82  socat TCP-LISTEN:8083,fork,su=nobody TCP4:192.168.49.2:31448 &
+
+--------------------------------------------------------------------------------
+
+############################ Health Check in K8s ##################################
+
+    68  ls
+   69  vi pod.yml
+   70  cd home/
+   71  ls
+   72  cd ec2-user/
+   73  ls
+   74   cd Kq
+   75  cd Kubernetes-Learning/
+   76  ls
+   77    ls
+   78  vi pod_second.yml 
+   79  kubectl apply -f pod_second.yml 
+   80  vi pod_second.yml 
+   81  kubectl apply -f pod_second.yml 
+   82  vi pod_second.yml 
+   83  kubectl apply -f pod_second.yml 
+   84  vi pod_second.yml 
+   85  kubectl apply -f pod_second.yml 
+   86  vi pod_second.yml 
+   87  kubectl apply -f pod_second.yml 
+   88  kubectl get pods -n manudevops
+   89  kubectl delete pod flask-app -n manudevops
+   90  kubectl apply -f pod_second.yml 
+   91  kubectl exec pod flask-app --bash
+   92  kubectl exec pod flask-app -- bash -n manudevops
+   93  kubectl exec flask-app -- bash -n manudevops
+   94   kubectl exec --tty flask-app -- /bin/bash -n mygfg 
+   95  clear
+   96  kubectl get pods -n manudevops
+   97  ls
+   98  cp pod_second.yml pod_third.yml
+   99  vi pod_third.yml 
+  100  kubectl apply -f pod_third.yml 
+  101  kubectl apply -f pod_third.yml 
+  102  vi pod_third.yml 
+  103  kubectl apply -f pod_third.yml 
+  104  kubectl get pods
+  105  kubectl exec --stdin --tty flask-app -- bash
+  106  kubectl get pods
+  107  kubectl get pods -n manudevops
+  108  history
+
+
+TO CHECK THE LIVENESS PROBE DELETE A FILE INSIDE A POD THE POD AUTOMATICALLY BECOMES UNHEALTHY AND RESTARTS AGAIN 
+It Keeps checking on the health check of the pods
+
+Similarly try of readiness probe and startup probe 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
