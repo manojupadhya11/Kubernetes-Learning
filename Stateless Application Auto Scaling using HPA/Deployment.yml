@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mario-app
+  labels:
+    app: nginx
+    dc: mumbai
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mario-app
+  template:
+    metadata:
+      labels:
+        app: mario-app
+    spec:
+      containers:
+      - name: manu-container
+        image: manuupadhya11/mario-game
+        ports:
+        - containerPort: 80
+        resources:
+          limits:
+            memory: "35Mi"
+          requests:
+            memory: "30Mi"
