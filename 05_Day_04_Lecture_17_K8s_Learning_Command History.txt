@@ -1,1 +1,82 @@
-a
+    1  clear
+    2  curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-latest.x86_64.rpm
+    3  rpm -Uvh minikube-latest.x86_64.rpm
+    4  minikube start --force
+    5  yum install docker -y
+    6  systemctl start docker
+    7  systemctl status docker
+    8  minikube start --force
+    9  curl -O https://s3.us-west-2.amazonaws.com/amazon-eks/1.28.3/2023-11-14/bin/linux/amd64/kubectl
+   10  chmod +x ./kubectl
+   11  cp ./kubectl /usr/bin/
+   12  kubectl  get nodes
+   13  kubectl  get svc
+   14  kubectl  get ns
+   15  kubectl  get all
+   16  kubectl  get deployments
+   17  kubectl  get pods
+   18  kubectl  get replicaset
+   19  clear
+   20  vi deployment.yml
+   21  kubectl apply -f deployment.yml 
+   22  vi deployment.yml
+   23  vi deployment.yml
+   24  kubectl apply -f deployment.yml 
+   25  kubectl get deployments
+   26  kubectl get pods
+   27  vi service.yml
+   28  kubectl apply -f service.yml 
+   29  kubectl get svc
+   30  yum install socat
+   31  socat TCP-LISTEN:8080,fork,su=nobody TCP4:192.168.49.2:32292 &
+   32  socat TCP-LISTEN:80,fork,su=nobody TCP4:192.168.49.2:32292 &
+   33  kubectl get pods
+   34  vi hpa.yml
+   35  kubectl api-versions
+   36  kubectl api-versions | grep autoscaling
+   37  vi hpa.yml 
+   38  vi deployment.yml 
+   39  kubectl apply -f hpa.yml 
+   40  kubectl get pods
+   41  kubectl get hpa
+   42  kubectl replicaset
+   43  kubectl replicas
+   44  kubectl get replicas
+   45  kubectl get replicaset
+   46  kubectl describe hpa
+   47  kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yamlkubectl get deployment -n kube-system
+   48  kubectl get pods
+   49  kubectl get ns
+   50  kubectl get pods -n kube-system
+   51  kubectl describe hpa
+   52  kubectl logs metrics-server-54bf7cdd6-rzhzf -n kube-system
+   53  kubectl get deployment -n kube-system
+   54  kubectl edit deployment metrics-server -n kube-system
+   55  kubectl rollout restart deplooyment metrics-server -n kube-system
+   56  kubectl rollout restart deployment metrics-server -n kube-system
+   57  kubectl get pods -n kube-system
+   58  kubectl get pods -n kube-system
+   59  kubectl describe hpa
+   60  kubectl describe hpa
+   61  kubectl get pods
+   62  kubectl get pods
+   63  kubectl get pods
+   64  kubectl get pods
+   65  kubelet get pods
+   66  kubectl get pods
+   67  vi hpa.yml 
+   68  kubectl apply -f hpa.yml 
+   69  kubectl get pods
+   70  kubectl get pods
+   71  kubectl get pods
+   72  kubectl get pods
+   73  kubectl get pods
+   74  kubectl get pods
+   75  kubectl get pods
+   76  kubectl get pods
+   77  kubectl get pods
+   78  vi hpa.yml 
+   79  kubectl apply -f hpa.yml 
+   80  watch kubectl get pods
+   81  ls
+   82  history
